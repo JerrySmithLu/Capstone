@@ -5,8 +5,9 @@
 1. [Project Motivation](#projectmotivation)
 2. [Project Summary](#projectsummary)
 3. [Process Dataset](#files)
-4. [Future Improvement](#futureimprovement)
-5. [Guide](#Guide)
+4. [Project Report](#Projectreport)
+5. [Future Improvement](#futureimprovement)
+6. [Guide](#Guide)
 
 ## Project Motivation:
 This capstone project with challenge is provided by Arvato Financial Solutions for the Udacity Data Science Nanodegree Program. Arvato provides several datasets which contain customer demographics data and mail-order customer info. But in this project, I try to solve 2 business questions:
@@ -53,6 +54,9 @@ It contains a summary of properties and its category defintion for each feature 
 6. `DIAS Attributes - Values 2017_New.csv` 
 It contains the category defintion for each feature created and its categorization types(numeric, ordinal, category......).
  
+## Project Report
+The project report is hosted in Github through this [link](https://github.com/JerrySmithLu/Capstone/blob/master/Arvato%20Project%20Report.pdf%22) 
+
 ## Future Improvement
 In supervised learning model, now I used sklearn pipeline and GradientBoostingRegressor model to train and test customer dataset. But its accuracy of prediction is not good and it can reach about 80%. I think I can use deep learning on customer dataset. We know the knowledges of Deep Learning is better and it’s been applied to some fields(NLP, Image Recognition etc.). For the data transformation, we can use median or gaussian function to replace missing data.  
 ## Guides
