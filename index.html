@@ -13136,10 +13136,34 @@ div#notebook {
     <div class="prompt input_prompt">
     </div><div class="inner_cell">
         <div class="text_cell_render border-box-sizing rendered_html">
+            <h2 id="Part-0:-Get-to-Know-the-Data">Solution Strategy<a class="anchor-link" href="#Part-0:-Get-to-Know-the-Data">&#182;</a></h2>
+            <p>There were three major steps in the project:</p>
+            <ul>
+                <li>
+                    Create Customer Segmentation Report — First, it’s to manually analysis features of customer dataset of the mail-order sales company in Germany and compare it to features of the general population. Then, using unsupervised learning techniques is to perform customer segmentation which cluster the population to describe the core customer base.
+                </li>
+                <li>
+                    Supervised Learning Model — Based on Customer Segmentatin Report step, The data is cleaned up, transformed and so on. This step, we’ll apply the previous analysis to build a machine learning model which predicts if each individual can respond to the campaign or not.
+                </li>
+                <li>
+                    Kaggle Competition — The final step, it to apply the supervised learning model to predict the campaign data to see how it measures up to the other fellow students.
+                </li>
+                <p>
+                    By theses steps, they can increase the efficiency in the customer acquisition processes and it finds out individuals who will become new customers petentially and then do them targeted advertising.
+                </p>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
+    </div><div class="inner_cell">
+        <div class="text_cell_render border-box-sizing rendered_html">
             <h2 id="Part-0:-Get-to-Know-the-Data">Problem Statement<a class="anchor-link" href="#Part-0:-Get-to-Know-the-Data">&#182;</a></h2><p>In this project, we'll try to solve 2 business questions:</p>
             <ul>
                 <li>How to help Arvato‘s customer which is a mail-order company to acquire new potential customers more efficiently?</li>
-                <li>How to make customer dataset more consistent and effective for data analysis?</li>                
+                <li>How to make customer dataset more consistent and effective for data analysis?</li>
             </ul>
 
         </div>
@@ -13697,7 +13721,21 @@ These will be tuned first because they have the highest impact on the model outc
     <div class="prompt input_prompt">
     </div><div class="inner_cell">
         <div class="text_cell_render border-box-sizing rendered_html">
-            <h2 id="Part-3:-Kaggle-Competition">Part 4: Future Improvements<a class="anchor-link" href="#Part-3:-Kaggle-Competition">&#182;</a></h2>
+            <h2 id="Part-3:-Kaggle-Competition">Part 4: Project Conclusion<a class="anchor-link" href="#Part-3:-Kaggle-Competition">&#182;</a></h2>
+            <p>
+                The purpose of this project is to leverage what we’ve learned to build a real data science project.
+            </p>
+            <li>In creating Customer Segmentation Report,  PCA with K-Means clustering is to perform customer segmentation which cluster the population to describe the core customer base.</li>
+            <li>In the supervised machine learning model pipeline, Extreme Gradient Boosting is an advanced and more efficient implementation of Gradient Boosting so it makes sense that it should have the highest score and it can predict petential individual responded to the campaign. And the stratified folds were applied to training dataset and testing dataset because the mailout dataset is highly imbalanced. At the end, we try to tune the parameters using Exhaustive Grid Search to get best margin gain.</li>
+            <li>After training that model, it can get a score of around 0.75 on the testing dataset. It can also continue to be improved by feature engineering.</li>
+        </div>
+    </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
+    </div><div class="inner_cell">
+        <div class="text_cell_render border-box-sizing rendered_html">
+            <h2 id="Part-3:-Kaggle-Competition">Part 5: Future Improvements<a class="anchor-link" href="#Part-3:-Kaggle-Competition">&#182;</a></h2>
             <p>In supervised learning model, now I used sklearn pipeline and GradientBoostingRegressor model to train and test customer dataset. But its accuracy of prediction is not good and it can reach about 80%. I think I can use deep learning on customer dataset. We know the knowledges of Deep Learning is better and it’s been applied to some fields(NLP, Image Recognition etc.). For the data transformation, we can use median or gaussian function to replace missing data.</p>
 
         </div>

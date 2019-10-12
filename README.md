@@ -5,9 +5,10 @@
 1. [Project Motivation](#projectmotivation)
 2. [Project Summary](#projectsummary)
 3. [Process Dataset](#files)
-4. [Project Report](#Projectreport)
-5. [Future Improvement](#futureimprovement)
-6. [Guide](#Guide)
+4. [Project Result](#Projectresult)
+5. [Project Report](#Projectreport)
+6. [Future Improvement](#futureimprovement)
+7. [Guide](#Guide)
 
 ## Project Motivation:
 This capstone project with challenge is provided by Arvato Financial Solutions for the Udacity Data Science Nanodegree Program. Arvato provides several datasets which contain customer demographics data and mail-order customer info. But in this project, I try to solve 2 business questions:
@@ -53,7 +54,14 @@ It contains a summary of properties and its category defintion for each feature 
 
 6. `DIAS Attributes - Values 2017_New.csv` 
 It contains the category defintion for each feature created and its categorization types(numeric, ordinal, category......).
- 
+
+## Project Conclusion
+The purpose of this project is to leverage what we’ve learned to build a real data science project.
+
+1. In creating Customer Segmentation Report, PCA with K-Means clustering is to perform customer segmentation which cluster the population to describe the core customer base.
+2. In the supervised machine learning model pipeline, Extreme Gradient Boosting is an advanced and more efficient implementation of Gradient Boosting so it makes sense that it should have the highest score and it can predict petential individual responded to the campaign. And the stratified folds were applied to training dataset and testing dataset because the mailout dataset is highly imbalanced. At the end, we try to tune the parameters using Exhaustive Grid Search to get best margin gain.
+3. After training that model, it can get a score of around 0.75 on the testing dataset. It can also continue to be improved by feature engineering.
+
 ## Project Report
 The project report is hosted in Github through this [link](https://github.com/JerrySmithLu/Capstone/blob/master/Arvato%20Project%20Report.pdf) 
 
